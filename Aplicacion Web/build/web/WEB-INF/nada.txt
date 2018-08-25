@@ -1,0 +1,1 @@
+El git no crea la carpeta vacía, por eso el txt

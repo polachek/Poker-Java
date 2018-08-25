@@ -1,0 +1,333 @@
+@font-face {
+    font-family: Poker;
+    src: url(../assets/fonts/PokerKings-Regular.ttf);
+}
+
+body{
+    margin: 0px;
+}
+
+/** INICIO LOGIN **/
+.login h1.title{
+    font-family: Poker;
+    font-weight: normal;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px #000;
+}
+
+.login #login{
+    background: url(../assets/images/black-tr.png) repeat;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1%;
+    box-shadow: 5px 10px 18px #000;
+}
+
+.login #login h2{
+    font-family: Poker;
+    font-weight: normal;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 2px #000;
+    margin: 0px 0px 13px 0px;
+}
+
+.login #login .input-login{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 35px;
+    padding: 1%;
+}
+
+.login #login #submit{
+    background: #fff;
+    border: 1px solid #999;
+    padding: 5px;
+    width: 20%;
+    min-width: 60px;
+    height: 37px;
+    margin: 0 auto;
+    display: block;
+}
+
+.login #login .login-error{
+    margin: 2%;
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -100;
+}
+/*** FIN LOGIN  **/
+
+/* INICIO iniJugador */
+.iniJugador{
+    background: url(../assets/images/poker-texture.jpg) repeat;
+}
+
+
+.iniJugador .txtEspJug{
+    animation-duration: 3.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    margin-top: 3%;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+.iniJugador h1,.iniJugador h2{
+    font-family: Poker;
+    font-weight: normal;
+    font-size: 2.8rem;
+    color: white;
+    text-shadow: 3px 2px #000;
+    text-align: center;
+}
+
+.iniJugador h2{
+    font-size: 2rem !important;
+}
+
+.iniJugador h2 #cantJug{
+    font-family: arial,sans-serif;
+    color: red;
+}
+
+.iniJugador #usuario{
+    color: #A9F5D0;;
+}
+
+.iniJugador a{
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+/* FIN iniJugador */
+
+/* INICIO JUEGO */
+.juego #area-juego{
+    background: url(../assets/images/texture-poker-table.jpg) repeat;
+}
+
+.juego #area-juego .cartas .carta-wrapper{
+    display: inline-block;
+    margin-right: 1%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    width: 110px;
+    height: 160px;
+}
+
+.juego #area-juego .cartas .carta-wrapper div{
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.juego #area-juego .cartas .carta-wrapper.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.juego #area-juego .cartas .carta-wrapper .card-back {
+  transform: rotateY(180deg);
+}
+
+.juego #area-juego .cartas{
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.juego #area-juego #juegoCartas{
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-family: arial;
+    margin: 0px 0px 15px 0px;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.juego #conProxMano{
+    text-align: center;
+    color: #fff;    
+}
+
+.juego #conProxMano .btnConf{
+    text-decoration: none;
+    padding: 9px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    width: 95px;
+    margin: 0 auto;
+}
+
+.juego #conProxMano #btnConfProxMano{
+    background-color: #04B404;
+    text-shadow: 1px 1px #000;
+}
+
+.juego #conProxMano #btnAbandonar{
+    text-shadow: 1px 0px #000;
+    background-color: #FF0040;
+}
+
+.juego #panelJugador{
+    float: left;
+    margin-left: 1%;
+}
+
+.juego #panelJugador #acciones .btnapuestas{
+    background-color: #01DFA5;
+    text-shadow: 1px 1px #BDBDBD;
+}
+
+.juego #panelJugador #acciones .btnaccion{
+    text-decoration: none;
+    padding: 9px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.juego #panelJugador #acciones .btnPasarRetirar{
+    text-shadow: 1px 0px #848484;
+    background-color: #FFBF00;
+}
+
+.juego #panelJugador #acciones #salir{
+    text-shadow: 1px 1px #000;
+    background-color: #FF0000;
+    margin-top: 7%;
+}
+
+.juego #panelJugador #acciones #valorApuesta{
+    margin: 0 auto;
+    display: block;
+    padding: 1%;
+    width: 96%;
+    text-align: center;
+}
+
+.juego #mensajes{
+    float: left;
+    margin-left: 3%;
+    width: 56%;
+    height: 15rem;    
+    border: 1px solid;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.juego #mensajes .mensajes{
+    width: 100%;
+    height:80%;
+    overflow-y: scroll;
+}
+
+.juego #mensajes .mensajes p{
+    margin-bottom: 0.3rem;
+    margin-top: 0px;
+    font-size: 0.9rem;
+}
+
+.juego #mensajes h1{
+    margin-top: 0px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.juego #mensajes .mensajes p:nth-child(odd) {
+    background-color: #E8E8E8;
+}
+
+.juego .mensajeEmergente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.juego .mensajeEmergente .msjEmeData{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: white;
+    border: 3px solid green;
+    text-align: center;
+    padding: 1%;
+}
+
+.juego .mensajeEmergente a{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #04B486;
+    margin-top: 2%;
+}
+
+.juego #header{
+    width: 100%;
+    height: 8rem;
+    background-image: url(../assets/images/517373934.jpg);
+}
+
+.juego #header h1{
+    font-family: Poker;
+    font-weight: normal;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px #000;
+    margin: 0px;
+    padding-top: 2%;
+}
+
+.juego .pozo{
+    text-align: center;
+}
+
+.juego .pozo h2{
+    text-transform: uppercase;
+    font-family: arial;
+}
+
+.juego .pozo #contador{
+    margin: 0px;
+    text-transform: uppercase;
+    font-family: arial;
+    color: #F5A9A9;
+}
+
+    
+
+/* FIN JUEGO */
